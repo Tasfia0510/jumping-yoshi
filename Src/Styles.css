@@ -1,0 +1,74 @@
+#startknapp {
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-image: url("Bilder/planka.png");
+    color:rgb(255, 236, 188);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-family: "lucida console", copperplate, monaco;
+    z-index: 1;
+}
+
+@keyframes blinkning {
+    0% { opacity: 1;}
+    50% {opacity: 0.6;}
+    100% { opacity: 1;} 
+}
+
+.Blinka {
+    animation: blinkning 1s infinite;
+}
+
+#spelruta {
+    border: 2px solid #c3eeef;
+    background-color: #c3eeef;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+#poäng {
+    position: absolute;
+    top: 18%;
+    left: 24%;
+    font-size: 30px;
+    font-family: "lucida console", copperplate, monaco;
+    color: rgb(117, 85, 43);
+    z-index: 2;
+    display: none;
+}
+
+.speletÖverRektangel {
+    position: fixed;
+    width: fit-content;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+#speletÖverBild {
+    display: block;
+    width: 350px;
+    height: 500px;
+}
+
+#poängAvslut {
+    top: 67%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    color: rgb(255, 236, 188);
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "lucida console", copperplate, monaco;
+    text-align: center;
+    z-index: 4;
+}
